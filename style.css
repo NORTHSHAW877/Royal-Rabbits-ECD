@@ -83,6 +83,28 @@ body {
   border-radius: 8px;
 }
 
+@media screen and (max-width: 480px) {
+  .home-content {
+    padding: 15px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .brand-name {
+    font-size: 24px;
+  }
+  
+  .home-content h1 {
+    font-size: 20px;
+  }
+  
+  nav ul li a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}
+
 .home-content h1 {
   font-size: 26px;
   margin-top: 0;
@@ -105,6 +127,17 @@ body {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 768px) {
+  .staff-grid {
+    flex-direction: column; /* stack vertically on tablets and smaller */
+    align-items: center; /* center the cards */
+  }
+  
+  .staff-card {
+    width: 80%; /* more flexible width */
+  }
+}
+
 .staff-grid {
   display: flex;
   justify-content: center;
@@ -113,7 +146,6 @@ body {
 }
 
 .staff-card {
-  width: 250px;
   height: 300px;
   background-color: white;
   border-radius: 30px;
@@ -123,6 +155,19 @@ body {
   text-align: center;
 }
 
+/* Mobile adjustment */
+@media screen and (max-width: 480px) {
+  .staff-card {
+    width: 90%;   /* or max-width: 300px; */
+    height: auto; /* allow height to scale naturally */
+    margin: 0 auto; /* center cards */
+  }
+  
+  .staff-card img {
+    height: auto;
+    max-width: 100%;
+  }
+}
 .staff-card:hover {
   transform: scale(1.05);
   background-color: #ffe0b2;
@@ -146,6 +191,90 @@ body {
   margin: 5px 0 5px;
 }
 
+.testimonial-section {
+  background-color: #fff6eb;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.testimonial-section h2 {
+  font-size: 2em;
+  color: orangered;
+  margin-bottom: 30px;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.testimonial-card {
+  background-color: #ffffff;
+  border-left: 6px solid #ffb347;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  max-width: 300px;
+  flex: 1 1 250px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.testimonial-card span {
+  font-weight: bold;
+  color: #5c3d00;
+}
+
+/* Donor Support Pics*/
+.donor-support-section {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #fffce9;
+}
+
+.donor-heading {
+  font-size: 2rem; /* adjust as needed */
+  color: orangered;
+  margin-bottom: 2rem;
+}
+
+/* Center the carousel */
+.carousel-wrapper {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Scrolling row */
+.carousel-track {
+  display: flex;
+  animation: scroll-left 20s linear infinite;
+  gap: 2rem;
+  align-items: center;
+}
+
+.carousel-track img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 .registration-section {
   padding: 60px 20px;
   text-align: center;
@@ -251,6 +380,17 @@ nav ul li a {
   z-index: 2;
 }
 
+@media screen and (max-width: 480px) {
+  nav ul {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    white-space: normal; /* allow wrapping on mobile */
+  }
+}
+
 /* Wrap each link in a padded box */
 nav ul li a {
   text-decoration: none;
@@ -268,7 +408,7 @@ nav ul li a {
 /* === Hover Effect on Nav Tabs === */
 nav ul li a:hover {
   transform: scale(1.15);
-  background-color: red; /* darker on hover */
+  background-color:rgb(243, 243, 18); /* darker on hover */
   color: #af5500;
   font-size: 17px;
 }
@@ -496,7 +636,7 @@ footer {
 
 /* Headings and text inside the box */
 .mission-box h2 {
-  color: #cc6600;
+  color: black;
   font-size: 1.4rem;
   margin-top: 0;
 }
@@ -519,7 +659,7 @@ footer {
 }
 /* === DONATE PAGE REFINED LAYOUT === */
 body.donate-page .donate-container {
-  background: white;
+  background: #fff8e1;
   padding: 30px;
   max-width: 900px;
   margin: 50px auto;
@@ -541,6 +681,16 @@ body.donate-page .bank-pay-section {
   flex-wrap: wrap;
   margin-top: 30px;
   gap: 40px;
+}
+
+/* DONATE */
+body.donate-page {
+  background: url('images/back6.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  /* Optional fallback color */
+  background-color: #f0e6d2;
+  color: #333; /* adjust text color if needed */
 }
 
 /* GALLERY */
@@ -568,15 +718,6 @@ body.blog-page {
   color: #333; /* adjust text color if needed */
 }
 
-/* DONATE */
-body.donate-page {
-  background: url('images/back6.jpg') no-repeat center center fixed;
-  background-size: cover;
-  min-height: 100vh;
-  /* Optional fallback color */
-  background-color: #f0e6d2;
-  color: #333; /* adjust text color if needed */
-}
 
 /* CONTACT */
 body.contactus-page {
@@ -603,10 +744,10 @@ body.contactus-page {
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
-    background-color: white; 
+    background-color: #fff8e1; 
 }
 
-   h1, h4 {
+   h1, h2 {
     color: #e65100;
     text-align: center;
 }
