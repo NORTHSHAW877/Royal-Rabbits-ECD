@@ -37,20 +37,44 @@
       </nav>
     </header>
 
-    <main class="gallery-page">
-      <h1>WHAT WE GET UP TO</h1>
-      <div class="up-to-gallery">
-        <img src="images/gallery1.jpg" alt="Children Poster 1" />
-        <img src="images/gallery2.png" alt="Children Poster 2" />
-        <img src="images/gallery6.png" alt="Children Poster 4" />
-        <img src="images/gallery8.jpg" alt="Children Poster 5" />
+  <main class="gallery-page">
+    <h1>WHAT WE GET UP TO</h1>
+
+    <div class="carousel-container">
+      <button class="carousel-btn left" onclick="moveSlide(-1)">&#10094;</button>
+      <div class="carousel-slide">
+        <img src="images/gallery1.jpg" alt="Gallery 1">
+        <img src="images/gallery2.png" alt="Gallery 2">
+        <img src="images/gallery6.png" alt="Gallery 3">
+        <img src="images/gallery8.jpg" alt="Gallery 4">
+        <img src="images/jump1.PNG" alt="Gallery 4">
+        <img src="images/run1.PNG" alt="Gallery 4">
       </div>
-    </main>
+      <button class="carousel-btn right" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+  </main>
 
-    <!-- FOOTER -->
-    <footer>
-      <p>&copy; All rights reserved Royal Rabbits Preschool. Designed and Maintained by P N Inc.</p>
-    </footer>
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; All rights reserved Royal Rabbits Preschool. Designed and Maintained by P N Inc.</p>
+  </footer>
 
-  </body>
+    <script>
+    let slideIndex = 0;
+
+    function moveSlide(direction) {
+      const slide = document.querySelector(".carousel-slide");
+      const images = document.querySelectorAll(".carousel-slide img");
+      const totalImages = images.length;
+
+      slideIndex += direction;
+
+      if (slideIndex < 0) slideIndex = totalImages - 1;
+      if (slideIndex >= totalImages) slideIndex = 0;
+
+      const slideWidth = images[0].clientWidth;
+      slide.style.transform = `translateX(-${slideWidth * slideIndex}px)`;
+    }
+  </script>
+</body>
 </html>

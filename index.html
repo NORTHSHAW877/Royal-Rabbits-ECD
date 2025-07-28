@@ -12,10 +12,27 @@
   <body>
 
     <!-- TOP NAVIGATION -->
-    <header id="tabs-top">
-    <nav>
-      <div class="brand-name">ROYAL RABBITS</div>
+  <!-- TOP HEADER BAR -->
+  <header id="top-header">
+    <div class="header-inner">
+      <div class="brand-social">
+        <div class="brand-name">ROYAL RABBITS</div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fas fa-podcast"></i></a>
+        </div>
+      </div>
 
+      <button class="hamburger" id="hamburger-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <nav id="main-nav">
       <ul>
         <li><a href="index.html">HOME</a></li>
         <li><a href="about.html">ABOUT</a></li>
@@ -25,16 +42,9 @@
         <li><a href="donate.html">DONATE</a></li>
         <li><a href="contactus.html">CONTACT US</a></li>
       </ul>
+    </nav>
+  </header>
 
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-tiktok"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-x-twitter"></i></a>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-        <a href="#"><i class="fas fa-podcast"></i></a>
-      </div>
-    </header>
 
   <!-- MAIN CONTENT -->
   <div class="mission-box">
@@ -145,5 +155,14 @@
       <p>&copy; All rights reserved Royal Rabbits Preschool. Designed and Maintained by P N Inc.</p>
     </footer>
 
-  </body>
+<script>
+  const hamburger = document.getElementById('hamburger-btn');
+  const nav = document.getElementById('main-nav');
+
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+
+</body>
 </html>
