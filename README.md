@@ -1,5 +1,6 @@
 # 🐰 Royal Rabbits Preschool Website
 
+<img width="102" height="20" alt="image" src="https://github.com/user-attachments/assets/f939d25c-0a65-4da3-8e35-0a35efc907dc" />
 Welcome to the official repository for the **Royal Rabbits Preschool** website!
 
 This site represents our joyful, nurturing preschool community. It's designed to inform, inspire, and connect with parents, partners, and supporters. Built with **HTML**, **CSS**, and **JavaScript**, it is fully responsive and optimized for modern devices.
