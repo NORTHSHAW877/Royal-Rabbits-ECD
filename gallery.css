@@ -1,0 +1,236 @@
+/* GALLERY PAGE BACKGROUND */
+body.gallery-page {
+  background: url('images/back6.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+/* MAIN AREA */
+.gallery-page main {
+  flex: 1;
+  padding: 40px 20px;
+}
+
+/* PAGE HEADING */
+.gallery-page h1 {
+  color: black;
+  text-shadow: none;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+/* MAIN GALLERY CONTAINER */
+.gallery-page .gallery-content {
+  background-color: orangered;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.gallery-page .gallery-content p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CAROUSEL STYLES */
+.gallery-page .carousel-container {
+  position: relative;
+  max-width: 800px;
+  margin: 40px auto 0 auto;
+  background: #FFB366;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-page .carousel-wrapper {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.gallery-page .carousel-slide {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gallery-page .carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  display: block;
+}
+
+/* CAROUSEL BUTTONS */
+.gallery-page .carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 69, 0, 0.9);
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.gallery-page .carousel-btn:hover {
+  background: rgba(255, 69, 0, 1);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.gallery-page .carousel-btn:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.gallery-page .carousel-btn.prev {
+  left: 15px;
+}
+
+.gallery-page .carousel-btn.next {
+  right: 15px;
+}
+
+/* INDICATORS */
+.gallery-page .carousel-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 100;
+}
+
+.gallery-page .carousel-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.gallery-page .carousel-indicator.active {
+  background: rgba(255, 69, 0, 0.9);
+}
+
+/* FOOTER */
+.gallery-page footer {
+  background: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+  width: 100%;
+}
+
+.gallery-page .footer-content p {
+  margin: 5px 0;
+  color: white;
+}
+
+.gallery-page .footer-content p:first-child {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.gallery-page .footer-content p:last-child {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 768px) {
+  .gallery-page main {
+    padding: 20px 10px;
+  }
+
+  .gallery-page h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .gallery-page .gallery-content p {
+    font-size: 1rem;
+  }
+
+  .gallery-page .carousel-container {
+    max-width: 100%;
+    margin: 20px auto 0 auto;
+  }
+
+  .gallery-page .carousel-wrapper {
+    height: 300px;
+  }
+
+  .gallery-page .carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.4rem;
+  }
+
+  .gallery-page .carousel-btn.prev {
+    left: 10px;
+  }
+
+  .gallery-page .carousel-btn.next {
+    right: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-page main {
+    padding: 15px 5px;
+  }
+
+  .gallery-page h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .gallery-page .carousel-container {
+    margin: 15px auto 0 auto;
+  }
+
+  .gallery-page .carousel-wrapper {
+    height: 250px;
+  }
+
+  .gallery-page .carousel-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+  }
+
+  .gallery-page .carousel-btn.prev {
+    left: 8px;
+  }
+
+  .gallery-page .carousel-btn.next {
+    right: 8px;
+  }
+}

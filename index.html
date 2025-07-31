@@ -12,40 +12,30 @@
   <body>
 
     <!-- TOP NAVIGATION -->
-  <!-- TOP HEADER BAR -->
-  <header id="top-header">
-    <div class="header-inner">
-      <div class="brand-social">
-        <div class="brand-name">ROYAL RABBITS</div>
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-tiktok"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-x-twitter"></i></a>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fas fa-podcast"></i></a>
-        </div>
-      </div>
-
-      <button class="hamburger" id="hamburger-btn">
-        <i class="fas fa-bars"></i>
-      </button>
-    </div>
-
+  <header>
+    <div class="brand-name">ROYAL RABBITS</div>
+    <button class="hamburger">☰</button>
     <nav id="main-nav">
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="fees.html">FEES</a></li>
-        <li><a href="gallery.html">GALLERY</a></li>
-        <li><a href="blog.html">BLOG</a></li>
-        <li><a href="donate.html">DONATE</a></li>
-        <li><a href="contactus.html">CONTACT US</a></li>
-      </ul>
-    </nav>
-  </header>
-
-
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="fees.html">FEES</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="donate.html">DONATE</a></li>
+          <li><a href="contactus.html">CONTACT US</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fas fa-podcast"></i></a>
+          </div>
+        </nav>
+   </header>
+  
   <!-- MAIN CONTENT -->
   <div class="mission-box">
     <h2>OUR MISSION</h2>
@@ -155,14 +145,6 @@
       <p>&copy; All rights reserved Royal Rabbits Preschool. Designed and Maintained by P N Inc.</p>
     </footer>
 
-<script>
-  const hamburger = document.getElementById('hamburger-btn');
-  const nav = document.getElementById('main-nav');
-
-  hamburger.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
-</script>
-
+  <script src="script.js"></script>
 </body>
 </html>

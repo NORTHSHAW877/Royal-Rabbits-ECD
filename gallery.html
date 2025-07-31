@@ -1,80 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GALLERY</title>
-    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GALLERY - ROYAL RABBITS PRESCHOOL</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="gallery.css" />
+</head>
+ 
   <body class="gallery-page">
 
     <!-- TOP NAVIGATION BAR -->
-    <header id="tabs-top">
-      <nav>
-        <div class="brand-name">ROYAL RABBITS</div>
-
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="fees.html">FEES</a></li>
-          <li><a href="gallery.html" class="active">GALLERY</a></li>
-          <li><a href="blog.html">BLOG</a></li>
-          <li><a href="donate.html">DONATE</a></li>
-          <li><a href="contactus.html">CONTACT US</a></li>
-        </ul>
-
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-tiktok"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-x-twitter"></i></a>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fas fa-podcast"></i></a>
-        </div>
+    <header>
+      <div class="brand-name">ROYAL RABBITS</div>
+      <button class="hamburger">☰</button>
+      <nav id="main-nav">
+           <ul>
+             <li><a href="index.html">HOME</a></li>
+             <li><a href="about.html">ABOUT</a></li>
+             <li><a href="fees.html">FEES</a></li>
+             <li><a href="gallery.html" class="active">GALLERY</a></li>
+             <li><a href="blog.html">BLOG</a></li>
+             <li><a href="donate.html">DONATE</a></li>
+             <li><a href="contactus.html">CONTACT US</a></li>
+           </ul>
       </nav>
+
+      <div class="social-icons">
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fas fa-podcast"></i></a>
+          </div>
     </header>
 
-  <main class="gallery-page">
-    <h1>WHAT WE GET UP TO</h1>
+    <!-- MAIN CONTENT -->
+    <main>
+      <div class="gallery-content">
+        <h1>WHAT WE GET UP TO</h1>
 
-    <div class="carousel-container">
-      <button class="carousel-btn left" onclick="moveSlide(-1)">&#10094;</button>
-      <div class="carousel-slide">
-        <img src="images/gallery1.jpg" alt="Gallery 1">
-        <img src="images/gallery2.png" alt="Gallery 2">
-        <img src="images/gallery6.png" alt="Gallery 3">
-        <img src="images/gallery8.jpg" alt="Gallery 4">
-        <img src="images/jump1.PNG" alt="Gallery 4">
-        <img src="images/run1.PNG" alt="Gallery 4">
+        <!-- MAIN CAROUSEL -->
+        <div class="carousel-container">
+          <div class="carousel-wrapper">
+            <div class="carousel-slide">
+              <img src="images/gallery1.jpg" alt="Gallery 1">
+              <img src="images/gallery2.png" alt="Gallery 2">
+              <img src="images/gallery6.png" alt="Gallery 3">
+              <img src="images/gallery8.jpg" alt="Gallery 4">
+              <img src="images/jump1.PNG" alt="Gallery 5">
+              <img src="images/run1.PNG" alt="Gallery 6">
+            </div>
+
+            <!-- Navigation Buttons -->
+            <button class="carousel-btn prev" aria-label="Previous image">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn next" aria-label="Next image">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+                
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+              <span class="carousel-indicator active"></span>
+              <span class="carousel-indicator"></span>
+              <span class="carousel-indicator"></span>
+              <span class="carousel-indicator"></span>
+              <span class="carousel-indicator"></span>
+              <span class="carousel-indicator"></span>
+            </div>
+          </div>
+        </div>
       </div>
-      <button class="carousel-btn right" onclick="moveSlide(1)">&#10095;</button>
-    </div>
-  </main>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; All rights reserved Royal Rabbits Preschool. Designed and Maintained by P N Inc.</p>
+    </footer>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>&copy; All rights reserved Royal Rabbits Preschool. Designed and Maintained by P N Inc.</p>
-  </footer>
-
-    <script>
-    let slideIndex = 0;
-
-    function moveSlide(direction) {
-      const slide = document.querySelector(".carousel-slide");
-      const images = document.querySelectorAll(".carousel-slide img");
-      const totalImages = images.length;
-
-      slideIndex += direction;
-
-      if (slideIndex < 0) slideIndex = totalImages - 1;
-      if (slideIndex >= totalImages) slideIndex = 0;
-
-      const slideWidth = images[0].clientWidth;
-      slide.style.transform = `translateX(-${slideWidth * slideIndex}px)`;
-    }
-  </script>
-</body>
+    <script src="script.js"></script> 
+  </body>
 </html>
