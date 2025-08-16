@@ -72,20 +72,20 @@ This site represents our joyful, nurturing preschool community. It's designed to
 
 ## 📂 File Structure (Simplified)
 Royal-Rabbits-Preschool/
-├── index.html
-├── about.html
-├── blog.html
-├── gallery.html
-├── fees.html
-├── donate.html
-├── contact.html
-├── thankyou.html
-├── style.css
-├── gallery.css # NEW: Scoped styles for gallery only
-├── script.js # Updated: hamburger menu + carousel logic
-├── images/ # Cleaned and optimized
-│ └── *.jpg / *.png / *.svg
-└── scripts/ # Optional JS if more is added
+index.html
+about.html
+blog.html
+gallery.html
+fees.html
+donate.html
+contact.html
+thankyou.html
+style.css
+gallery.css # NEW: Scoped styles for gallery only
+script.js # Updated: hamburger menu + carousel logic
+images/ # Cleaned and optimized
+*.jpg / *.png / *.svg
+scripts/ # Optional JS if more is added
 
 📫 Contact
 For any queries or feedback, feel free to contact me via the contact form on the website!
