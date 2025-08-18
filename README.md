@@ -1,115 +1,91 @@
-🐰 Royal Rabbits Preschool Website
-Welcome to the Royal Rabbits Preschool website repository! This website is designed to showcase our warm and nurturing preschool environment, provide helpful information to parents, and encourage community support. The site is responsive and built using HTML, CSS, and JavaScript with a focus on clarity, accessibility, and user engagement.
+# 🐰 Royal Rabbits Preschool Website
 
-🌟 Website Features
-📌 Pages Included:
-Home Page:
+<img width="102" height="20" alt="image" src="https://github.com/user-attachments/assets/f939d25c-0a65-4da3-8e35-0a35efc907dc" />
 
-Engaging welcome section with animations and a call-to-action
+Welcome to the official repository for the **Royal Rabbits Preschool** website!
 
-Downloadable registration form for parents
+This site represents our joyful, nurturing preschool community. It's designed to inform, inspire, and connect with parents, partners, and supporters. Built with **HTML**, **CSS**, and **JavaScript**, it is fully responsive and optimized for modern devices.
 
-Staff showcase section
+---
 
-Mission and vision statement
+## 🌟 Website Features
 
-Donor support carousel (scrolling partner logos)
+### 📌 Pages Included:
 
-Parent reviews/testimonials
+- **Home Page**
+  - Welcome section with engaging text and animations
+  - Downloadable registration form
+  - Staff introduction section
+  - Mission & vision statement
+  - Donor support carousel (scrolling logos)
+  - Parent testimonials
 
-About Page:
+- **About Page**
+  - Insight into our values and offerings
+  - Animated content boxes and responsive layout
 
-Insight into what we offer and our values
+- **Blog Page**
+  - Articles and updates (expandable section)
 
-Attractive layout using animated boxes
+- **Gallery Page**
+  - Beautiful photo showcase of our students' daily activities
+  - Dedicated carousel for images
+  - Styles moved to a separate `gallery.css` for maintainability
 
-Blog Page:
+- **Fees Page**
+  - Clear breakdown of tuition and related fees
 
-Articles and updates from our preschool (can be expanded)
+- **Donate Page**
+  - Donation bank details with clean, trusted layout
 
-Gallery Page:
+- **Contact Us Page**
+  - Address and contact details
+  - Fully working enquiry form (name, email, message)
+  - Redirects to a confirmation/thank-you page
 
-Beautiful photo showcase of children’s activities and daily fun
+- **Thank You Page**
+  - Friendly confirmation after form submission
 
-Fees Page:
+---
 
-Clear breakdown of school fees and related information
+## 💡 Design Highlights
 
-Donate Page:
+- 🎨 **Playful, child-friendly design** with warm colors and animations
+- 📱 **Mobile-friendly and device-responsive** (media queries)
+- 👩‍🏫 **Hover effects** on staff and content boxes
+- 💬 **Parent reviews** to build credibility
+- 💖 **Donor support carousel** for community appreciation
+- 🧭 **Navigation bar** with hamburger menu and smooth transitions
+- 🔗 **Social media icons** accessible from every page
+- 👣 **Consistent footer** with branding and contact info
 
-Bank details for donations
+---
 
-Styled for clarity and trust
+## 🛠️ Technologies Used
 
-Contact Us Page:
+- **HTML5**
+- **CSS3**
+- **JavaScript** (minimal — for carousel, hamburger menu, and contact form logic)
+- **Media Queries** for responsive design
 
-Physical address and contact information
+---
 
-Fully functional enquiry form (name, email, message)
-
-Submission leads to a “Thank You” confirmation page
-
-Thank You Page:
-
-A simple, friendly message to confirm form submission
-
-💡 Design Highlights
-🎨 Bright, child-friendly theme with playful yet professional design
-
-📱 Mobile responsive using media queries for all devices
-
-🖼️ Custom illustrations, icons, and images
-
-👩‍🏫 Staff cards with hover effects
-
-💬 Parent reviews section for credibility
-
-💖 Donor icons carousel for community appreciation
-
-🧭 Navigation bar with hover effects and animated transitions
-
-🔗 Social media icons at the top of every page
-
-👣 Footer with consistent branding and contact info
-
-🛠️ Technologies Used
-HTML5
-
-CSS3
-
-JavaScript (minimal, e.g. formspree or contact form behavior)
-
-Responsive design with media queries
-
-📂 File Structure (basic)
-pgsql
-Copy
-Edit
+## 📂 File Structure (Simplified)
 Royal-Rabbits-Preschool/
-│
-├── index.html
-├── about.html
-├── blog.html
-├── gallery.html
-├── fees.html
-├── donate.html
-├── contact.html
-├── thankyou.html
-├── style.css
-├── images/
-│   └── (all icons, photos, and backgrounds)
-├── scripts/
-│   └── (optional JavaScript if used)
-🚀 Getting Started
-To view the site locally:
-
-Clone the repo:
-git clone https://github.com/your-username/royal-rabbits-preschool.git
-
-Open index.html in your browser.
-
-🧸 Credits
-All images and icons are either original, royalty-free, or used with permission.
+index.html
+about.html
+blog.html
+gallery.html
+fees.html
+donate.html
+contact.html
+thankyou.html
+style.css
+gallery.css # NEW: Scoped styles for gallery only
+script.js # Updated: hamburger menu + carousel logic
+images/ # Cleaned and optimized
+*.jpg / *.png / *.svg
+scripts/ # Optional JS if more is added
 
 📫 Contact
 For any queries or feedback, feel free to contact me via the contact form on the website!

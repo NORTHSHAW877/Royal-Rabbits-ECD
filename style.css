@@ -517,7 +517,7 @@ nav ul li a:hover {
     justify-content: center; /* Vertically centers the content */
     align-items: center;     /* Horizontally center (optional, for balance) */
     text-align: center;      /* Ensures text is centered on small screens */
-    min-height: 200px;       /* Optional: set a consistent height for mobile */
+    min-height: 200px;      
   }
   
   .testimonial-card p {
